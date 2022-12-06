@@ -14,7 +14,7 @@ export const getNewProducts = async (token) => {
         return [res.data, null]
     }
     catch(err){
-        console.log(err.response);
+        console.error(err.response);
         return [null, err.response]
     }
 }
@@ -32,7 +32,7 @@ export const getProduct = async (token, id) => {
         return [res.data, null]
     }
     catch(err){
-        console.log(err.response);
+        console.error(err.response);
         return [null, err.response]
     }
 }
@@ -52,7 +52,7 @@ export const getProducts = async (token, category) => {
         return [res.data, null]
     }
     catch(err){
-        console.log(err.response);
+        console.error(err.response);
         return [null, err.response]
     }
 }
